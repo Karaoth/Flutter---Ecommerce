@@ -277,13 +277,7 @@ class _UpdateProductsFormState extends State<UpdateProductsForm> {
                       decoration: textInputDecoration(
                           labelText: 'Product Name',
                           icon: const Icon(Icons.production_quantity_limits)),
-                      validator: (value) {
-                        if (value == null || value.isEmpty || value.length < 6) {
-                          return 'your password cannot be less than 6 characters';
-                        } else {
-                          return null;
-                        }
-                      },
+
                       controller: widget._myProductNameController,
                     ),
                     const SizedBox(height: 10),
@@ -291,7 +285,7 @@ class _UpdateProductsFormState extends State<UpdateProductsForm> {
                       decoration: textInputDecoration(
                           labelText: 'Product Price',
                           icon: const Icon(Icons.price_change)),
-                      validator: (value) {},
+
                       controller: widget._myProductPriceController,
                     ),
                     const SizedBox(height: 10),
